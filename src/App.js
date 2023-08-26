@@ -31,24 +31,22 @@ export default function PrototypeForm() {
             <label>
               <input
                 type="text"
-                placeholder="Username"
                 value={person.name}
                 onChange={(e) => handleChange(e, "name")}
                 required
               />
-              {person.name && <p>Name: {person.name}</p>}
+              <p>Name: {person.name}{''}</p>
             </label>
           </div>
           <div className="input-box">
             <label>
               <input
                 type="text"
-                placeholder="Password"
                 required
                 value={person.surname}
                 onChange={(e) => handleChange(e, "surname")}
               />
-              <p>
+              <p> Surname: 
                 {person.surname}
                 {""}
               </p>
@@ -58,24 +56,22 @@ export default function PrototypeForm() {
             <label>
               <input
                 type="email"
-                placeholder="Password"
                 required
                 value={person.email}
                 onChange={(e) => handleChange(e, "email")}
               />
-              <p>{person.email}</p>
+              <p>Email: {person.email}</p>
             </label>
           </div>
           <div className="input-box">
             <label>
               <input
                 type="text"
-                placeholder="Password"
                 required
                 value={person.favoritePet}
                 onChange={(e) => handleChange(e, "favoritePet")}
               />
-              <p>
+              <p> Beloved pet:
                 {person.favoritePet}
                 {""}
               </p>
