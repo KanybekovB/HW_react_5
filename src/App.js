@@ -14,8 +14,18 @@ export default function PrototypeForm() {
     });
   };
   return (
-    <>
-      <div className="wrapper">
+    <div style={{
+      paddin: '100px',
+      width: '100vw',
+      height: '100vh',
+    }}>
+      <div className="wrapper" style={{
+        width: '250px', 
+        margin: '100px auto',
+        padding: '10px',
+        height: '340px',
+        border: '1px solid black',
+      }}>
         <form action="">
           <div className="input-box">
             <label>
@@ -76,6 +86,6 @@ export default function PrototypeForm() {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 }
